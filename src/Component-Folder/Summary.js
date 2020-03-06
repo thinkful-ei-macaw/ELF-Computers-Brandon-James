@@ -1,5 +1,5 @@
 import React from 'react';
-import SummaryOptionCost from './Summary-Sub-C/SummaryOptionCost';
+import SummaryOptionCost from './SummaryOptionCost';
 
 function Summary(props) {
 
