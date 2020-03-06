@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MainForm from './MainForm';
 import MainSummary from './MainSummary';
-import STORE from '../STORE';
+import STORE from './STORE';
 
 class Main extends Component {
     

@@ -1,5 +1,5 @@
 import React from 'react';
-import Features from '../Features';
+import Features from './Features';
 
 
 function MainForm(props) {

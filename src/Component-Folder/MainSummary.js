@@ -1,6 +1,6 @@
 import React from 'react';
-import Summary from '../Summary-C/Summary';
-import SummaryTotal from '../Summary-C/SummaryTotal';
+import Summary from './Component-Folder/Summary-C/Summary';
+import SummaryTotal from './SummaryTotal';
 
 function MainSummary(props) {
 

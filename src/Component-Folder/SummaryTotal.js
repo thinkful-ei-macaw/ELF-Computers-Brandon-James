@@ -1,5 +1,5 @@
 import React from 'react';
-import SummaryTotalValue from './Summary-Sub-C/SummaryTotalValue'
+import SummaryTotalValue from './SummaryTotalValue'
 
 function SummaryTotal(props) {
 
