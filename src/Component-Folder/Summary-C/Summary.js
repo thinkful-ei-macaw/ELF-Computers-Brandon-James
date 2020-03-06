@@ -1,13 +1,9 @@
 import React from 'react';
+import SummaryOptionCost from './Summary-Sub-C/SummaryOptionCost';
 
 function Summary(props) {
 
-    const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD'
-    });
-
-    let i = Object.keys(props.state.selected).map((feature, idx) => {
+    let summary = Object.keys(props.state.selected).map((feature, idx) => {
         const featureHash = feature + '-' + idx;
         const selectedOption = props.state.selected[feature];
     
@@ -15,14 +11,12 @@ function Summary(props) {
           <div className="summary__option" key={featureHash}>
             <div className="summary__option__label">{feature} </div>
             <div className="summary__option__value">{selectedOption.name}</div>
-            <div className="summary__option__cost">
-              {USCurrencyFormat.format(selectedOption.cost)}
-            </div>
+            <SummaryOptionCost selectedOption={selectedOption} USCurrencyFormat={props.USCurrencyFormat}/>
           </div>
         );
       });
 
-      return i;
+      return summary;
 }
 
 export default Summary;
